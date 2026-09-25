@@ -1,0 +1,11 @@
+<odoo>
+    <record id="ir_cron_shopify_pull" model="ir.cron">
+        <field name="name">Shopify: Pull Products</field>
+        <field name="model_id" ref="product.model_product_template"/>
+        <field name="state">code</field>
+        <field name="code">model.action_sync_from_shopify()</field>
+        <field name="interval_number">15</field>
+        <field name="interval_type">minutes</field>
+        <field name="active" eval="True"/>
+    </record>
+</odoo>
