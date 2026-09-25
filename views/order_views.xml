@@ -1,0 +1,9 @@
+<odoo>
+    <record id="action_shopify_order_sync" model="ir.actions.server">
+        <field name="name">Sync Orders from Shopify</field>
+        <field name="model_id" ref="sale.model_sale_order"/>
+        <field name="binding_model_id" ref="sale.model_sale_order"/>
+        <field name="state">code</field>
+        <field name="code">model.action_sync_orders_from_shopify()</field>
+    </record>
+</odoo>

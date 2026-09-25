@@ -8,6 +8,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/product_views.xml',
+        'views/order_views.xml',
         'data/cron.xml',
     ],
     'installable': True,
