@@ -10,6 +10,7 @@
         'views/product_views.xml',
         'views/order_views.xml',
         'views/enrichment_views.xml',
+        'views/chatbot_views.xml',
         'data/cron.xml',
     ],
     'installable': True,
