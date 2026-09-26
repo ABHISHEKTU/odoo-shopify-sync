@@ -1,0 +1,27 @@
+<odoo>
+    <record id="action_shopify_enrich" model="ir.actions.server">
+        <field name="name">Enrich with AI</field>
+        <field name="model_id" ref="product.model_product_template"/>
+        <field name="binding_model_id" ref="product.model_product_template"/>
+        <field name="state">code</field>
+        <field name="code">records.action_enrich_with_ai()</field>
+    </record>
+
+    <record id="view_product_template_form_enrichment" model="ir.ui.view">
+        <field name="name">product.template.form.enrichment</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="AI Enrichment">
+                    <group>
+                        <field name="ai_seo_title"/>
+                        <field name="ai_seo_tags"/>
+                        <field name="ai_marketing_copy"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
+
